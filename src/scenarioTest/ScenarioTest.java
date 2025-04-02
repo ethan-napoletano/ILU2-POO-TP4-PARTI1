@@ -1,6 +1,10 @@
 package scenarioTest;
 
+import produit.Poisson;
+import produit.Produit;
+import produit.Sanglier;
 import villagegaulois.Etal;
+import villagegaulois.IEtal;
 
 public class ScenarioTest {
 
@@ -22,15 +26,19 @@ public class ScenarioTest {
 //				+ (quantiteSouhaitee - quantiteRestante) + ".");
 //	}
 
-	private static String accorderNomProduit(String produit, int quantiteSouhaitee) {
+	/*private static String accorderNomProduit(String produit, int quantiteSouhaitee) {
 		String chaineProduit = produit;
 		if (quantiteSouhaitee > 1) {
 			chaineProduit = produit + "s";
 		}
 		return chaineProduit;
-	}
+	}*/
 
 	public static void main(String[] args) {
+		IEtal[] etals = new IEtal[3];
+		Etal<Sanglier> etalSanglier = new Etal<>();
+		etals[0] = etalSanglier;
+
 
 	}
 
